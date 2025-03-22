@@ -37,15 +37,16 @@ The tree consists only of the root, its left child, and its right child.
  * }
  */
 class Solution {
-    public boolean checkTree(TreeNode root) {
+    public static boolean checkTree(TreeNode root) {
 
         if(root.val <= 100 && root.val >= -100) {
-            if(root.val == root.left.val + root.right.val) {
-                return true;
-            } else {
-                return false;
-            }
+            return root.val == root.left.val + root.right.val;
         }
         return false;
+    }
+
+    public static void main(String[] args) {
+        TreeNode root = new TreeNode(10, new TreeNode(4), new TreeNode(6));
+        System.out.println(checkTree(root));
     }
 }

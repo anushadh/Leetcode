@@ -35,5 +35,5 @@ class Solution {
             System.out.println(sum(-100, 4));
             System.out.println(sum(-99, 4));
             System.out.println(sum(-101, 102));
-    }
+        }
 }
